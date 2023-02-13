@@ -36,3 +36,9 @@ console.log("Half of the U.S.A's population plus 1 is about " + countryPopulatio
 console.log("Finland's population is about " + finlandsPop + ".")
 console.log("Q: Is Finland's population greater than the United States? A: That is " + (finlandsPop > countryPopulation) + ".")
 console.log("The average population for a country is about " + averageCountryPopulation + "." + " Q: Is the population of the United States less than the average population of a country? A: That is " + (averageCountryPopulation > countryPopulation) + ".")
+
+function myFunction() {
+    alert("This is a function! Hooray!")
+    alert(498483 % 8809)
+}
+myFunction();
