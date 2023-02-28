@@ -51,6 +51,65 @@ if (countryPopulation > 33000000) {
 5 + 6 + '4' + 9 - 4 - 2;
 console.log('9' - '5', '19' - '13' + '17', '19' - '13' + 17, '123' < 57, 5 + 6 + '4' + 9 - 4 - 2)
 
+//My Method
+const userCountry = prompt("What country do you live in?")
+const numNeighbors = Number(prompt(`How many neighboring countries does ${userCountry} have?`))
+if (numNeighbors === 1) {
+    console.log(`${userCountry} has only one bordering country!`)
+} else if (numNeighbors > 1) {
+    console.log(`${userCountry} has more than one bordering country!`)
+} else {
+    console.log(`${userCountry} has no bordering countries.`)
+}
+
+//Alex's method
+if (numNeighbors > 0) {
+    if (numNeighbors == 1) {
+        console.log("ONLY ONE!")
+    } else if (numNeighbors > 1) {
+        console.log("MORE THAN ONE!");
+    }
+} else {
+    console.log("NO ONE!");
+}
+
+const newCountry = "New Zealand"
+const newCountryLanguage = "English";
+const newCountryPopulation = 5288100;
+const isCountryIsland = true;
+
+    if(!isCountryIsland) {
+        if(newCountryLanguage === "English" && newCountryPopulation > 50000000) {
+            console.log(`You should live in ${newCountry} :D`)
+        } else {
+            console.log(`You shouldn't live in ${newCountry} :c`)
+        }
+    } else {
+        console.log(`You shouldn't live in ${newCountry} :c`)
+    } 
+
+ let day = 'Jupiter'
+
+    if (day === 'monday') {
+        console.log(`On ${day} I get up and get ready for the school week.`)
+    } else if(day === 'tuesday') {
+        console.log(`On ${day} I do.. well something.`)
+    } else if(day === 'wednesday' || day === 'thursday') {
+        console.log(`On ${day} I do some stuff.`)
+    } else if(day === 'friday') {
+        console.log(`On ${day} I do stuff.`)
+    } else if(day === 'sunday' || day === 'saturday') {
+        console.log(`On ${day} I relax on the weekend.`)
+    } else {
+        console.log(`${day} is not a day of the week :/`)
+    }
+
+
+
+
+
+
+
 /*function myFunction() {
     alert("This is a function! Hooray!")
     alert(498483 % 8809)
