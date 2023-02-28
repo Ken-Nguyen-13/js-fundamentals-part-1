@@ -3,7 +3,28 @@ let countryPopulation = 331000000;
 const continent = "North America";
 const continentPopulation = 367000000;
 const isIsland = false;
-const language = "English";
+const language = '';
+
+switch(language) {
+    case 'Mandarin':
+    case 'Chinese':
+        console.log(`${language} is the most common native langauge spoken on earth!`)
+        break;
+    case 'Spanish':
+        console.log(`${language} is the 2nd most common native langauge spoken on earth!`)
+        break;
+    case 'English':
+        console.log(`${language} is the 3rd most common native langauge spoken on earth!`)
+        break;
+    case 'Hindi':
+        console.log(`${language} is the 4th most common native langauge spoken on earth!`)
+        break;
+    case 'Arabic':
+        console.log(`${language} is the 5th most common native langauge spoken on earth!`)
+        break;
+    default:
+        console.log(`${language} is an intresting language!`)
+}
 
 console.log(country)
 console.log(continent)
@@ -16,7 +37,7 @@ console.log("The population of " + continent + " is about " + continentPopulatio
 let y = 501;
 let x = 10;
 x **= 2;
-x -= [x + (x / 2)] + x;
+x -= [x + (x / 2)] + x;//
 x *= -1;
 x -= x / 2;
 x -= 74498;
@@ -52,7 +73,7 @@ if (countryPopulation > 33000000) {
 console.log('9' - '5', '19' - '13' + '17', '19' - '13' + 17, '123' < 57, 5 + 6 + '4' + 9 - 4 - 2)
 
 //My Method
-const userCountry = prompt("What country do you live in?")
+/*const userCountry = prompt("What country do you live in?")
 const numNeighbors = Number(prompt(`How many neighboring countries does ${userCountry} have?`))
 if (numNeighbors === 1) {
     console.log(`${userCountry} has only one bordering country!`)
@@ -71,7 +92,7 @@ if (numNeighbors > 0) {
     }
 } else {
     console.log("NO ONE!");
-}
+} */
 
 const newCountry = "New Zealand"
 const newCountryLanguage = "English";
@@ -82,10 +103,10 @@ const isCountryIsland = true;
         if(newCountryLanguage === "English" && newCountryPopulation > 50000000) {
             console.log(`You should live in ${newCountry} :D`)
         } else {
-            console.log(`You shouldn't live in ${newCountry} :c`)
+            console.log(`${newCountry} does not meet your criteria :c`)
         }
     } else {
-        console.log(`You shouldn't live in ${newCountry} :c`)
+        console.log(`${newCountry} does not meet your criteria :c`)
     } 
 
  let day = 'Jupiter'
