@@ -3,7 +3,7 @@ let countryPopulation = 331000000;
 const continent = "North America";
 const continentPopulation = 367000000;
 const isIsland = false;
-const language = '';
+const language = 'English';
 
 switch(language) {
     case 'Mandarin':
