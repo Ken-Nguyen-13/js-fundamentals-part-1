@@ -73,7 +73,7 @@ if (countryPopulation > 33000000) {
 console.log('9' - '5', '19' - '13' + '17', '19' - '13' + 17, '123' < 57, 5 + 6 + '4' + 9 - 4 - 2)
 
 //My Method
-/*const userCountry = prompt("What country do you live in?")
+const userCountry = prompt("What country do you live in?")
 const numNeighbors = Number(prompt(`How many neighboring countries does ${userCountry} have?`))
 if (numNeighbors === 1) {
     console.log(`${userCountry} has only one bordering country!`)
@@ -92,15 +92,15 @@ if (numNeighbors > 0) {
     }
 } else {
     console.log("NO ONE!");
-} */
+}
 
-const newCountry = "New Zealand"
+const newCountry = "Spain";
 const newCountryLanguage = "English";
-const newCountryPopulation = 5288100;
-const isCountryIsland = true;
+const newCountryPopulation = 49999999;
+const isCountryIsland = false;
 
     if(!isCountryIsland) {
-        if(newCountryLanguage === "English" && newCountryPopulation > 50000000) {
+        if(newCountryLanguage === "English" && newCountryPopulation < 50000000) {
             console.log(`You should live in ${newCountry} :D`)
         } else {
             console.log(`${newCountry} does not meet your criteria :c`)
