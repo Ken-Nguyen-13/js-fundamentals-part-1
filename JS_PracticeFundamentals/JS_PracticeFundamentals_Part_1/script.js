@@ -1,9 +1,30 @@
-/*const country = "U.S.A";
+const country = "U.S.A";
 let countryPopulation = 331000000;
 const continent = "North America";
 const continentPopulation = 367000000;
 const isIsland = false;
-const language = 'Vietnamese';
+const language = 'English';
+
+switch(language) {
+    case 'Mandarin':
+    case 'Chinese':
+        console.log(`${language} is the most common native langauge spoken on earth!`)
+        break;
+    case 'Spanish':
+        console.log(`${language} is the 2nd most common native langauge spoken on earth!`)
+        break;
+    case 'English':
+        console.log(`${language} is the 3rd most common native langauge spoken on earth!`)
+        break;
+    case 'Hindi':
+        console.log(`${language} is the 4th most common native langauge spoken on earth!`)
+        break;
+    case 'Arabic':
+        console.log(`${language} is the 5th most common native langauge spoken on earth!`)
+        break;
+    default:
+        console.log(`${language} is an intresting language!`)
+}
 
 console.log(country)
 console.log(continent)
@@ -16,7 +37,7 @@ console.log("The population of " + continent + " is about " + continentPopulatio
 let y = 501;
 let x = 10;
 x **= 2;
-x -= [x + (x / 2)] + x;//
+x -= [x + (x / 2)] + x;
 x *= -1;
 x -= x / 2;
 x -= 74498;
@@ -52,7 +73,7 @@ if (countryPopulation > 33000000) {
 console.log('9' - '5', '19' - '13' + '17', '19' - '13' + 17, '123' < 57, 5 + 6 + '4' + 9 - 4 - 2)
 
 //My Method
-const userCountry = prompt("What country do you live in?")
+let userCountry = prompt("What country do you live in?")
 const numNeighbors = Number(prompt(`How many neighboring countries does ${userCountry} have?`))
 if (numNeighbors === 1) {
     console.log(`${userCountry} has only one bordering country!`)
@@ -102,27 +123,13 @@ const isCountryIsland = false;
         console.log(`On ${day} I relax on the weekend.`)
     } else {
         console.log(`${day} is not a day of the week :/`)
-    } */
+    }
+    
+countryPopulation = Number(prompt(`What is your countries population?`));
 
-//const userCountry = prompt(`What is your country?`)
-//const countryPopulation = Number(prompt(`What is your countries population?`));
-
-/*Previous Method:
+//Previous Method:
 countryPopulation > 33000000 ? console.log(`${userCountry}'s population is above an average countries population!`):
-console.log(`${userCountry}'s population is below an average countries population.`);*/
+console.log(`${userCountry}'s population is below an average countries population.`);
 
 //New Method
-//console.log(`${userCountry}'s population is ${countryPopulation > 33000000 ? 'above' : 'below'} an average countries population!`)
-
-const bill = 0;
-
-switch(bill) {
-    case bill <= 50:
-        console.log(`The bill was $${bill}, the tip was $0 and the total value was $${bill}`)
-        break;
-    case bill <= 300:
-        console.log(`The bill was $${bill}, the tip was $${bill * 0.15} and the total value was $${bill + (bill * 0.15)}`)
-        break;
-    default:
-        console.log(`The bill was $${bill}, the tip was $${bill * 0.2} and the total value was $${bill + (bill * 0.2)}`)
-}
+console.log(`${userCountry}'s population is ${countryPopulation > 33000000 ? 'above' : 'below'} an average countries population!`)
