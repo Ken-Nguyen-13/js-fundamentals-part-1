@@ -9,7 +9,7 @@ function ableToGetDriversLiscence() {
 ableToGetDriversLiscence();
 
 //8.5. Exercises: Arrays¶ 1
-const practiceFile = [`273.15`]
+/*const practiceFile = [`273.15`]
 
 practiceFile.push(42);
 console.log(practiceFile);
@@ -36,9 +36,37 @@ console.log(firstObjectInCargoHold);
 console.log(cargoHold);
 
 cargoHold.unshift(1138);
-cargoHold.push(" and 20 meters");
+cargoHold.push("20 meters");
 console.log(cargoHold);
 
 console.log(`Our cargo hold had ${cargoHold.length} objects in it. They were ${cargoHold}.`)
 
 //8.5. Exercises: Arrays¶ 3
+cargoHold.splice(3, 0, "keys")
+console.log(cargoHold)
+
+cargoHold.splice(cargoHold.indexOf("instruction manual"), 1);
+console.log(cargoHold)
+
+cargoHold.splice(2, 3, 'cat', 'fob', 'string cheese');
+console.log(cargoHold)*/
+
+//8.5. Exercises: Arrays¶ 3
+const holdCabinet1 = ['duct tape', 'gum', 3.14, false, 6.022e23];
+const holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
+
+console.log(holdCabinet1.concat(holdCabinet2));
+console.log(holdCabinet1);
+console.log(holdCabinet2);
+
+console.log(holdCabinet1.slice(holdCabinet1.length -2));
+console.log(holdCabinet1);
+
+console.log(holdCabinet2.slice(1, 3));
+console.log(holdCabinet2);
+
+console.log(holdCabinet1.reverse());
+console.log(`${holdCabinet1} so it does mutate the array.`);
+
+console.log(holdCabinet2.sort());
+console.log(holdCabinet2);
