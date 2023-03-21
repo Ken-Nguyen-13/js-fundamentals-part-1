@@ -2,8 +2,8 @@ const calcAverage = (score1, score2, score3) => {
     const avgScore = (score1 + score2 + score3) / 3;
     return avgScore;
 }
-const dolphinAvgScore = calcAverage(70, 70, 70)
-const koalaAvgScore = calcAverage(35, 35, 35)
+const dolphinAvgScore = calcAverage(36, 35, 35)
+const koalaAvgScore = calcAverage(36, 35, 35)
 console.log(`The Dolphins score was ${dolphinAvgScore} points, and the Koalas score was ${koalaAvgScore} points!`)
 
 const checkWinner = (avgDolphin, avgKoala) => {

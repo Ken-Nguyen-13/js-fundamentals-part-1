@@ -36,3 +36,26 @@ const calcPercentOfWorld = population => {
     return percentOfWorldPopulation;
 }
 console.log(calcPercentOfWorld(332), calcPercentOfWorld(790), calcPercentOfWorld(1441))
+
+//Intro to Arrays
+const populations = [333, 99, 1, 0];
+const percentOfWorld = [percentageOfWorld2(populations[0]), percentageOfWorld2(populations[1]), percentageOfWorld2(populations[2]), percentageOfWorld2(populations[3])]
+console.log(percentOfWorld)
+console.log(populations.length === 4)
+
+//Basic Array Methods
+const neighbors = ["Canada", "Mexico"];
+neighbors.push("Utopia");
+console.log(neighbors);
+
+neighbors.pop();
+console.log(neighbors);
+
+if(!neighbors.includes('Germany')) {
+    console.log(`Probably not a central European country :D`);
+}
+neighbors[neighbors.indexOf(`Mexico`)] = "Denmark";
+console.log(neighbors);
+
+neighbors[neighbors.indexOf(`Denmark`)] = "Mexico";
+console.log(neighbors)
