@@ -9,7 +9,7 @@ function ableToGetDriversLiscence() {
 ableToGetDriversLiscence();
 
 //8.5. Exercises: Arrays¶ 1
-/*const practiceFile = [`273.15`]
+const practiceFile = [`273.15`]
 
 practiceFile.push(42);
 console.log(practiceFile);
@@ -49,9 +49,9 @@ cargoHold.splice(cargoHold.indexOf("instruction manual"), 1);
 console.log(cargoHold)
 
 cargoHold.splice(2, 3, 'cat', 'fob', 'string cheese');
-console.log(cargoHold)*/
+console.log(cargoHold)
 
-//8.5. Exercises: Arrays¶ 3
+//8.5. Exercises: Arrays¶ 4
 const holdCabinet1 = ['duct tape', 'gum', 3.14, false, 6.022e23];
 const holdCabinet2 = ['orange drink', 'nerf toys', 'camera', 42, 'parsnip'];
 
@@ -70,3 +70,46 @@ console.log(`${holdCabinet1} so it does mutate the array.`);
 
 console.log(holdCabinet2.sort());
 console.log(holdCabinet2);
+
+//8.5. Exercises: Arrays¶ 5
+
+const str = 'In space, no one can hear you code.'
+console.log(str.split()) //does nothing to original array... I think.
+console.log(str.split('e')) //Splits string at each "e"
+console.log(str.split(' ')) //Splits up string at each space
+console.log(str.split('')) //splits up string at each character
+console.log(str)
+
+arr = ['B', 'n', 'n', 5]
+console.log(arr.join('')) //does nothing to original array... I think.
+console.log(arr.join('a')) //after each letter, adds a "a" up until last letter
+console.log(arr.join(' ')) //after each letter, adds a " " up until last letter
+console.log(arr.join('')) //after each letter, adds a "" up until last letter
+console.log(arr)
+
+// do try-it on 8.5. Exercises: Arrays¶ 5
+
+//8.5. Exercises: Arrays¶ 6
+
+const element1 = ['hydrogen', 'H', 1.008]
+const element2 = ['helium', 'He', 4.003]
+const element26 = ['iron', 'Fe', 55.85]
+
+const table = []
+
+table.push(element1)
+console.log(table)
+
+table.push(element2)
+console.log(table)
+
+table.push(element26)
+console.log(table)
+
+console.log(table[1])
+console.log(table[1][1])
+
+console.log(table)
+console.log(table[0][2]);
+console.log(table[1][0]);
+console.log(table[2][1]);
