@@ -1,10 +1,11 @@
 //Function to say hello world!
 const greeting = prompt(`Do you want a greeting? (Type something if yes, click cancel if no.)`)
 function helloWorld() {
-    console.log(`Hello World!`)
+    return `Hello World!`
 }
 if(greeting) {
-    helloWorld()
+    const greetUser = helloWorld()
+    console.log(greetUser)
 }
 //Lucian's Luscious Lasagna 
 const expectedMinutesInOven = 40;

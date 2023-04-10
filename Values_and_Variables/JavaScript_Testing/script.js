@@ -62,3 +62,7 @@ console.log(arr.slice(2));
 console.log(arr.slice(1,4));
 
 console.log(arr);
+function testFunction(a, n) {
+return a.splice(n - 1, 1);
+}
+console.log(testFunction([1,2,3,4,5],3))

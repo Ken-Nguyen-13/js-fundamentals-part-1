@@ -6,17 +6,13 @@ const petDogIsPresent = Boolean(prompt(`Is Annalyns dog present? If yes, type so
 
 //Checks if Annalyn can do fast attack 
 function canFastAttack(knightIsAwake) {
-    if(knightIsAwake) {
-        return true;
-    } else {
-        return false;
-    }
+    const canExecuteFastAttack = !knightIsAwake ? true : false;
+    return canExecuteFastAttack;
 }
-console.log(`Can Annalyn execute fast attack? That's ${!canFastAttack(knightIsAwake)}.`)
+console.log(`Can Annalyn execute fast attack? That's ${canFastAttack(knightIsAwake)}.`)
 
 //Checks of Annalyn can spy
 function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
-    //Why is this code working?!?!?!?!?
     if(knightIsAwake || archerIsAwake || prisonerIsAwake) {
         return true;
     } else {
