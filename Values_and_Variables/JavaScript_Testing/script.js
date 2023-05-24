@@ -68,8 +68,43 @@
 // console.log(testFunction([1,2,3,4,5],3))
 
 //for(let rep = 1; )
-function calcSquare() {
-    const number = document.getElementById("number").innerHTML
-    const sqrtNumber = number ** 2;
-    console.log(`The square of ${number} is ${sqrtNumber}`)
-}
+// function calcSquare() {
+//     const number = document.getElementById("number").innerHTML
+//     const sqrtNumber = number ** 2;
+//     console.log(`The square of ${number} is ${sqrtNumber}`)
+// }
+// // const createdElement = document.createElement("p")
+// // document.querySelector("body").appendChild(createdElement)
+// function myFunction() {
+//     console.log(`hi`)
+// }
+// let arr = []
+// let sumOfNums = 0;
+// function myFunction() {
+// let i = 1;
+// while (i < 11) {
+//     arr.push(Math.trunc(Math.random() * 10 + 1))
+//     i++
+// }
+// 	for (let i = 0; i < arr.length; i++) {
+// 	sumOfNums += arr[i]
+// 	}
+//     console.log(arr, sumOfNums)
+// }
+// const pete = {
+// 	firstname: `Pete`,
+// 	profession: `Programmer`,
+// 	fullname() {
+//     return this.firstname 
+//     },
+//     age: 20
+//     }
+//     const cara = {
+// 	firstname: `Cara`,
+//     fullname() {
+//         return `Cara Coder`
+//     },
+//     age: 32
+//     }
+//     pete.firstname = `Peter`;
+//     console.log()
