@@ -13,6 +13,7 @@
 // }
 // }
 // console.log(`There were ${numOfPrimes} prime numbers!`)
+
 let numOfPrimes = 0;
 
 for (let i = 1; i < 1000001; i++) {
