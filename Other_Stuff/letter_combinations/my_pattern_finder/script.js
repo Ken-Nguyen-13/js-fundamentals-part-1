@@ -11,7 +11,7 @@
 // }
 
 let primes = [];
-let numOfPrimes = 1000;
+let numOfPrimes = 10;
 let i = 1;
 while (primes.length <= numOfPrimes) {
   let isPrime = true;
