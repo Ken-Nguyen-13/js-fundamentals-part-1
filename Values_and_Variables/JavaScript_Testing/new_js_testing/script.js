@@ -109,3 +109,43 @@ Customer.prototype.bonus = function () {
 var customer1 = new Customer("Cara", `Coder`, 2, 1500);
 
 console.log(customer1.bonus());
+
+//   const infinity = Infinity;
+//   console.log(infinity)
+//  const arr = [1, 2, 3, 4, 5, 0]
+//  console.log(Math.min.apply(null, arr))
+//  console.log(Math.min(arr))
+
+// Escape characters
+console.log('Hi! I\'m Ken!')
+
+const infinity2 = Infinity;
+console.log(typeof infinity2)
+const bigIntTest = BigInt(10000000000000000000000000000)
+console.log(typeof bigIntTest)
+const testArr = [Infinity, 1];
+const testObj = {
+  n1: 1,
+  n2: 2
+}
+console.log(typeof testArr)
+console.log(typeof testObj)
+
+const pi = Math.PI;
+
+function circumferenceCalc() {
+  const circumference = (Math.random() * 1000).toFixed(2);
+  const radius = (circumference / (2 * pi)).toFixed(2)
+  console.log(`A circle with a circumference of ${circumference}cm, has a radius of ${radius}cm.`)
+}
+const calcTimeout = setTimeout(circumferenceCalc, 2000)
+const e = Math.E;
+const gelfondsConstant = pi * e;
+console.log(`Gelfond's constant is pi * e or ${gelfondsConstant}.`)
+
+const testVariable = 2^10; // "^" takes the bigger number beside it and subtracts it from the smaller number besides it.
+const testVariable2 = 2&7; // Bitwise "AND" operator.
+const testVariable3 = !!0; //Converts values to boolean
+const testVariable4 = !!!0; // If there's a odd number of "!", then it acts like just one "!". If an even amount, then they all cancel out
+const testVariable5 = 19 ** 19 ** 19;
+console.log(testVariable, testVariable2, testVariable3,testVariable4, testVariable5)

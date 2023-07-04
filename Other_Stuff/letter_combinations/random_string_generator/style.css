@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+.interface {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+}
+p {
+    display: flex;
+    word-wrap:wrap;
+    margin-left: 30px;
+    font-size: 27px;
+    font-family: "Courier New";
+}

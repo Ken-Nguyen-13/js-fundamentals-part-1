@@ -19,11 +19,15 @@
         if (textValue > buttonText.length - 1) {
           textValue = 0;
         }
-        const createdButton = document.createElement(`button`);
+          const createdButton = document.createElement(`button`);
+        createdButton.id = "newButton"
         createdButton.setAttribute("onclick", "buttonFunction()");
         createdButton.textContent = buttonText[textValue];
+        createdButton.style.fontSize = "27px";
+        createdButton.style.backgroundColor = "skyblue";
+        createdButton.style.marginLeft = "10px"
         document.body.appendChild(createdButton);
-      }
+        }
       // let number = 200;
       // function halve(num) {
       //   let result = num;
