@@ -149,3 +149,10 @@ const testVariable3 = !!0; //Converts values to boolean
 const testVariable4 = !!!0; // If there's a odd number of "!", then it acts like just one "!". If an even amount, then they all cancel out
 const testVariable5 = 19 ** 19 ** 19;
 console.log(testVariable, testVariable2, testVariable3,testVariable4, testVariable5)
+
+const arr = [2, 'Strawberries', 91, 6]
+const add1 = arr.map(input => input += 1)
+
+const testArrowFunc = (num) => {num++}
+console.log(testArrowFunc(4))
+console.log(arr, add1)
