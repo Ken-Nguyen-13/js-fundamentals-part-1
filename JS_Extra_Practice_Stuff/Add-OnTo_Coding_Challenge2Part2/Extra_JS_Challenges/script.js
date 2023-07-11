@@ -41,7 +41,8 @@ function addUp(lastNum) {
   }
 }
 console.log(addUp(100));
-/*Checks if sentence is a pangram*/
+
+/*Checks if sentence is a pangram exercise*/
 function checkPangram() {
   const result = document.getElementById('result');
   if (document.getElementById('pangramSubmission').value) {
@@ -79,7 +80,7 @@ function checkPangram() {
       if (!submission.includes(letters[i])) {
         isPangram = false;
         console.log(submission)
-        break
+        break;
       }
     }
     console.log(isPangram);

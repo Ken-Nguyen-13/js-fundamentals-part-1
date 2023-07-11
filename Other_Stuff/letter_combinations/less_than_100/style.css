@@ -9,13 +9,13 @@ html {
 }
 body {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
 }
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /*background-color: sEaGrEEn;*/
+    /*background-color: sEaGrEEn;  /*<-- Will work */
 }

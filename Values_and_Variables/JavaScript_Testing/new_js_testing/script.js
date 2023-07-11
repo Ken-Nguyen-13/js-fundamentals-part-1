@@ -153,6 +153,52 @@ console.log(testVariable, testVariable2, testVariable3,testVariable4, testVariab
 const arr = [2, 'Strawberries', 91, 6]
 const add1 = arr.map(input => input += 1)
 
-const testArrowFunc = (num) => {num++}
+const testArrowFunc = (num) => {
+  num++;
+  return num; // Why doesn't return num++ work?
+}
 console.log(testArrowFunc(4))
 console.log(arr, add1)
+console.log(this)
+
+function spreadSyntaxTest() {
+ return [...arr.splice(1, 2)]
+}
+const spreadSyntaxTestResult = spreadSyntaxTest();
+console.log(arr, spreadSyntaxTestResult)
+
+const fakePi = 3;
+console.log(Math.PI = fakePi)
+
+// Scope Test
+function f1() {
+  f2();
+}
+function f2() {
+  console.log(`This works`);
+}
+f1()
+
+var x = `Str`; // Global Variable
+
+function one() {
+  two();
+}
+function two() {
+  let x = 1; // Local Variable
+  console.log(x)
+}
+one() // --> 1
+console.log(x)
+
+let testVariable6 = 'this is a string'
+
+// function three() {
+//   for (let i = 0; i < 3; i++) {
+//     console.log(testVariable6)
+//     let string = `str`
+//   }
+//   return string;
+// }
+// const testVariable7 = three();
+// console.log(testVariable7)
