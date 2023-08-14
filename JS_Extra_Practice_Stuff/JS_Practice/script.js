@@ -86,6 +86,71 @@ for (let i = 1; i < 51; i++) {
 }
 
 //Candidate Winner Calculator
-let totalCandidateVotes = [candidate1, candidate2, candidate3]
-console.log(totalCandidateVotes)
+let totalCandidateVotes = [candidate1, candidate2, candidate3];
+console.log(totalCandidateVotes);
 
+let arr1 = [
+  1,
+  2,
+  3,
+  "This is a string",
+  7,
+  "This is another string",
+  1,
+  2,
+  3,
+  7,
+  8,
+  "10",
+  10,
+  "Hello",
+];
+
+function removeStrings(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "number" && !result.includes(arr[i])) {
+      result.push(arr[i]);
+    }
+  }
+  return result;
+}
+console.log(removeStrings(arr1));
+
+// Hangman Function
+// Goal:
+// The first character in a string is replaced with an underscore as well has every other letter following
+function hangman(str) {
+  let strArray = str.split("");
+  for (let i = 0; i < strArray.length; i++) {
+    if (i % 2 === 0) {
+      strArray[i] = "_";
+    }
+  }
+  return strArray.join('');
+}
+console.log(hangman("Foo"));
+console.log(hangman('AnFanc'))
+console.log(hangman('ThisIsAnFancyString'))
+console.log(hangman('123456789123456789123456789'))
+console.log(hangman('123456789123456789123456789123456789'))
+console.log(hangman('123456789123456789123456789123456789123456789'))
+
+// Palindrome Checker
+function palindrome(pali) {
+  const paliArray = pali.split("");
+  const reversedPaliArray = pali.split("").reverse();
+  console.log(paliArray, reversedPaliArray)
+  if (paliArray.toString() === reversedPaliArray.toString()) {
+    return true;
+  } else {
+    return false;
+  }
+}
+console.log(palindrome('racecar'))
+console.log(palindrome('rotator'))
+console.log(palindrome('202020'))
+console.log(palindrome('12321'))
+console.log(palindrome('%*&*(&*&(*&*%'))
+console.log(palindrome('%*&*(&*&(*&*%*'))
+console.log(palindrome('12345678987654321234567898765432123456789876543212345678987654321'))

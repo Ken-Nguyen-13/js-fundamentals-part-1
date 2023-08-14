@@ -1,38 +1,38 @@
-// const bob = {
-//     name: `Bob`,
-//     testFunc(num) {
-//         return this.name
-//     }
-// }
-// console.log(bob.testFunc())
-// console.log(`hello ${true === false ? `more ${bob.name}` : `bob is cheese`}`)
+const bob = {
+  name: `Bob`,
+  testFunc(num) {
+    return this.name;
+  },
+};
+console.log(bob.testFunc());
+console.log(`hello ${true === false ? `more ${bob.name}` : `bob is cheese`}`);
 
-// function Person(firstName, lastName, fullName) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.fullName = fullName;
-// }
+function Person(firstName, lastName, fullName) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.fullName = fullName;
+}
 
-// const person1 = new Person(`Jake`, `Courier`, `Jake Courier`)
-// console.log(person1)
+const person1 = new Person(`Jake`, `Courier`, `Jake Courier`);
+console.log(person1);
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Calculates then average to "numOfSums" sums of randomly generated numbers
 
-// let sumOfNums = 0;
-// let sumOfSumOfNums = 0;
-// let numOfSums = 100000;
+let sumOfNums = 0;
+let sumOfSumOfNums = 0;
+let numOfSums = 100000;
 
-// for (let i = 0; i <= numOfSums - 1; i++) {
-//    for (let i = 0; i <= 99; i++) {
-//       sumOfNums += Math.random()
-//    }
-//    sumOfSumOfNums += sumOfNums;
-//    sumOfNums = 0;
-// }
+for (let i = 0; i <= numOfSums - 1; i++) {
+  for (let i = 0; i <= 99; i++) {
+    sumOfNums += Math.random();
+  }
+  sumOfSumOfNums += sumOfNums;
+  sumOfNums = 0;
+}
 
-// console.log((sumOfSumOfNums / numOfSums).toFixed(4))
+console.log((sumOfSumOfNums / numOfSums).toFixed(4));
 
 //Every time I said attribute, I meant property
 function Animal(kg) {
@@ -117,58 +117,66 @@ console.log(customer1.bonus());
 //  console.log(Math.min(arr))
 
 // Escape characters
-console.log('Hi! I\'m Ken!')
+console.log("Hi! I'm Ken!");
 
 const infinity2 = Infinity;
-console.log(typeof infinity2)
-const bigIntTest = BigInt(10000000000000000000000000000)
-console.log(typeof bigIntTest)
+console.log(typeof infinity2);
+const bigIntTest = BigInt(10000000000000000000000000000);
+console.log(typeof bigIntTest);
 const testArr = [Infinity, 1];
 const testObj = {
   n1: 1,
-  n2: 2
-}
-console.log(typeof testArr)
-console.log(typeof testObj)
+  n2: 2,
+};
+console.log(typeof testArr);
+console.log(typeof testObj);
 
 const pi = Math.PI;
 
 function circumferenceCalc() {
   const circumference = (Math.random() * 1000).toFixed(2);
-  const radius = (circumference / (2 * pi)).toFixed(2)
-  console.log(`A circle with a circumference of ${circumference}cm, has a radius of ${radius}cm.`)
+  const radius = (circumference / (2 * pi)).toFixed(2);
+  console.log(
+    `A circle with a circumference of ${circumference}cm, has a radius of ${radius}cm.`
+  );
 }
-const calcTimeout = setTimeout(circumferenceCalc, 2000)
+const calcTimeout = setTimeout(circumferenceCalc, 2000);
 const e = Math.E;
 const gelfondsConstant = pi * e;
-console.log(`Gelfond's constant is pi * e or ${gelfondsConstant}.`)
+console.log(`Gelfond's constant is pi * e or ${gelfondsConstant}.`);
 
-const testVariable = 2^10; // "^" takes the bigger number beside it and subtracts it from the smaller number besides it.
-const testVariable2 = 2&7; // Bitwise "AND" operator.
+const testVariable = 2 ^ 10; // "^" takes the bigger number beside it and subtracts it from the smaller number besides it.
+const testVariable2 = 2 & 7; // Bitwise "AND" operator.
 const testVariable3 = !!0; //Converts values to boolean
 const testVariable4 = !!!0; // If there's a odd number of "!", then it acts like just one "!". If an even amount, then they all cancel out
-const testVariable5 = 19 ** 19 ** 19;
-console.log(testVariable, testVariable2, testVariable3,testVariable4, testVariable5)
+const testVariable5 = 19 ** (19 ** 19);
+console.log(
+  testVariable,
+  testVariable2,
+  testVariable3,
+  testVariable4,
+  testVariable5
+);
 
-const arr = [2, 'Strawberries', 91, 6]
-const add1 = arr.map(input => input += 1)
+const arr = [2, "Strawberries", 91, 6];
+const add1 = arr.map((input) => (input += 1));
 
 const testArrowFunc = (num) => {
   num++;
   return num; // Why doesn't return num++ work?
-}
-console.log(testArrowFunc(4))
-console.log(arr, add1)
-console.log(this)
+};
+console.log(testArrowFunc(4));
+console.log(arr, add1);
+console.log(this);
 
 function spreadSyntaxTest() {
- return [...arr.splice(1, 2)]
+  return [...arr.splice(1, 2)];
 }
 const spreadSyntaxTestResult = spreadSyntaxTest();
-console.log(arr, spreadSyntaxTestResult)
+console.log(arr, spreadSyntaxTestResult);
 
 const fakePi = 3;
-console.log(Math.PI = fakePi)
+console.log((Math.PI = fakePi));
 
 // Scope Test
 function f1() {
@@ -177,7 +185,7 @@ function f1() {
 function f2() {
   console.log(`This works`);
 }
-f1()
+f1();
 
 var x = `Str`; // Global Variable
 
@@ -186,12 +194,12 @@ function one() {
 }
 function two() {
   let x = 1; // Local Variable
-  console.log(x)
+  console.log(x);
 }
-one() // --> 1
-console.log(x)
+one(); // --> 1
+console.log(x);
 
-let testVariable6 = 'this is a string'
+let testVariable6 = "this is a string";
 
 // function three() {
 //   for (let i = 0; i < 3; i++) {
@@ -202,3 +210,150 @@ let testVariable6 = 'this is a string'
 // }
 // const testVariable7 = three();
 // console.log(testVariable7)
+
+console.log(name);
+
+const is_CVC_Word = /[^aeiou]*[aeiou][^aeiou]*/;
+const cat = "Cat";
+console.log(is_CVC_Word);
+//console.log(new OfflineAudioCompletionEvent)
+const testArr2 = [
+  "Banana",
+  "Orange",
+  "Apple",
+  "Mango",
+  function testFunc() {
+    return `hello`;
+  },
+];
+console.log(testArr2.toString());
+const testArr3 = [
+  1,
+  2,
+  3,
+  "A",
+  "C",
+  "b",
+  "B",
+  "a",
+  true,
+  "c",
+  false,
+  null,
+  false,
+  true,
+  undefined,
+  null,
+  undefined,
+  "d",
+  true,
+  45,
+];
+testArr3.sort();
+console.log(testArr3);
+const testArr4 = [10, -11, 12, -13, -14, -15];
+
+console.log(testArr4.join(','))
+
+const allOver10 = testArr4.every(function (n) {
+  return n > 10;
+});
+const someOver10 = testArr4.some(function (n) {
+  return n > 10;
+});
+console.log(allOver10, someOver10, testArr4);
+
+const nums123 = [1, 2, 3];
+const nums456 = [4, 5, 6];
+const nums789 = [7, 8, 9];
+const nums1Through9 = [...nums123, ...nums456, ...nums789]; //[1,2,3,4,5,6,7,8,9]
+console.log(nums123, nums456, nums789, nums1Through9);
+let opinion = "I hate coding";
+console.log(opinion);
+opinion = opinion.replace("hate", "love");
+console.log(opinion);
+
+let date = new Date();
+function updateDate() {
+  date = new Date();
+  console.log(date, date.getFullYear(), date.getMonth());
+}
+console.log(date.setFullYear(2022), date);
+setInterval(updateDate, 10000);
+console.log(
+  (0.2213663123).toFixed(5),
+  Math.sqrt(Math.trunc(Math.random() * 50))
+);
+
+const testObj2 = {
+  obj: this,
+};
+console.log(testObj2);
+///console.log(arguments) --> arguments isn't defined
+
+const testFunc2 = function (a, b, c) {
+  console.log(
+    arguments,
+    arguments["callee"],
+    arguments["Symbol(Symbol.iterator)"]
+  );
+  return [a, b];
+};
+console.log(testFunc2(1, 3, 4));
+testFunc2(2, 5, 7);
+const toLowercase = (word) => (word = word.toLowerCase());
+
+console.log(toLowercase("KEn")); // --> "ken"
+const daysOfTheWeek = [
+  "monday",
+  "tueday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+  "sunday",
+];
+console.log(Boolean(-4));
+
+const arr2 = [1, 2, 3, 4, 5];
+console.log(arr2[3]);
+const testObj3 = {
+  a: 2,
+};
+console.log(testObj3.a);
+console.log(console.memory);
+
+let testStr = "Foobar";
+for (let i = 0; i < testStr.length; i++) {
+  if (i % 2 === 0) {
+    console.log(testStr[i], i);
+    testStr = testStr.replace(testStr[i], "_");
+  }
+}
+console.log(testStr); // --> _ob_r
+
+const testStr2 = "Hello My Name is Ken";
+const testStr2Array = testStr2.split("en");
+console.log(testStr2, testStr2Array);
+
+function testFunction(a) {
+  const obj = {};
+  return obj;
+}
+console.log("HELLO".toLowerCase())
+console.log(testFunction("a"));
+const testObj4 = {};
+testObj4.key = testStr;
+console.log(testObj4);
+
+const variableSet = new Set([1, 2, 3]);
+console.log(variableSet);
+
+const domTestVariable = document.getElementsByTagName('h1');
+console.log(domTestVariable)
+domTestVariable.textContent = "Now I say HELLO!";
+console.log(domTestVariable);
+
+console.error("Error!");
+throw new Error("2nd Error!"); // Nothing can run after throw
+console.log("Hi!");
