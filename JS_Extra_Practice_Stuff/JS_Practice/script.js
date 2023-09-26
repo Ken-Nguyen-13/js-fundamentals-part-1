@@ -127,30 +127,88 @@ function hangman(str) {
       strArray[i] = "_";
     }
   }
-  return strArray.join('');
+  return strArray.join("");
 }
 console.log(hangman("Foo"));
-console.log(hangman('AnFanc'))
-console.log(hangman('ThisIsAnFancyString'))
-console.log(hangman('123456789123456789123456789'))
-console.log(hangman('123456789123456789123456789123456789'))
-console.log(hangman('123456789123456789123456789123456789123456789'))
+console.log(hangman("AnFanc"));
+console.log(hangman("ThisIsAnFancyString"));
+console.log(hangman("123456789123456789123456789"));
+console.log(hangman("123456789123456789123456789123456789"));
+console.log(hangman("123456789123456789123456789123456789123456789"));
 
 // Palindrome Checker
 function palindrome(pali) {
   const paliArray = pali.split("");
   const reversedPaliArray = pali.split("").reverse();
-  console.log(paliArray, reversedPaliArray)
+  console.log(paliArray, reversedPaliArray);
   if (paliArray.toString() === reversedPaliArray.toString()) {
     return true;
   } else {
     return false;
   }
 }
-console.log(palindrome('racecar'))
-console.log(palindrome('rotator'))
-console.log(palindrome('202020'))
-console.log(palindrome('12321'))
-console.log(palindrome('%*&*(&*&(*&*%'))
-console.log(palindrome('%*&*(&*&(*&*%*'))
-console.log(palindrome('12345678987654321234567898765432123456789876543212345678987654321'))
+console.log(palindrome("racecar"));
+console.log(palindrome("rotator"));
+console.log(palindrome("202020"));
+console.log(palindrome("12321"));
+console.log(palindrome("%*&*(&*&(*&*%"));
+console.log(palindrome("%*&*(&*&(*&*%*"));
+console.log(
+  palindrome(
+    "12345678987654321234567898765432123456789876543212345678987654321"
+  )
+);
+
+// Exercises
+// Exercise 1
+// Steps:
+/*
+create an empty set
+Create a set containing 0 to 10 using loop
+Remove an element from a set
+Clear a set
+Create a set of 5 string elements from array
+Create a map of countries and number of characters of a country */
+const countries = ["Finland", "Sweden", "Norway"];
+
+const testSet = new Set();
+
+for (let i = 0; i < 11; i++) testSet.add(i);
+console.log(testSet, testSet.size);
+const testSetSize = testSet.size;
+testSet.delete(3);
+console.log(testSet, testSet.size);
+// testSet.clear();
+console.log(testSet, testSet.size);
+testSet.add(1);
+console.log(testSet, testSet.size, testSetSize);
+
+const arrOfStrs = ["a", "b", "c", "d", "e"];
+const setOfStrs = new Set(arrOfStrs);
+console.log(arrOfStrs, setOfStrs);
+
+const mapOfCountries = new Map();
+for (const country of countries) mapOfCountries.set(country, country.length);
+console.log(mapOfCountries);
+
+// Exercise 2
+// Steps:
+/*
+Find a union b
+Find a intersection b
+Find a with b */
+const a = [4, 5, 8, 9];
+const b = [3, 4, 5, 7];
+const c = [...a, ...b];
+const union = new Set(c);
+console.log(union);
+
+// const setA = new Set(a);
+// const setB = new Set(b);
+
+const intersection = a.filter((num) => b.includes(num));
+console.log(intersection);
+const differenceA = a.filter((num) => !b.includes(num));
+const differenceB = b.filter((num) => !a.includes(num));
+const totalDifference = [...differenceA, ...differenceB];
+console.log(differenceA, differenceB, totalDifference);
